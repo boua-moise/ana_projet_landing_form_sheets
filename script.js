@@ -231,7 +231,7 @@ form.addEventListener("submit", async (event) => {
     contactFields.classList.add("hidden");
 
     successMessage.querySelector("p").textContent =
-      "La demande d'envoi a été transmise. Cet écran ne confirme pas à lui seul l'enregistrement : vérifiez que votre réponse apparaît dans Google Sheets.";
+      "La demande d'envoi a été transmise.";
 
     successMessage.classList.remove("hidden");
 
