@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Enquête ANA sur les besoins en formation et mentorat informatique.">
+  <title>Questionnaire — ANA Mentorat Informatique</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="form-topnav"><a href="index.html">← Retour à la présentation ANA</a></nav>
+  <header class="site-header">
+    <div class="brand-mark" aria-hidden="true">ANA</div>
+    <div>
+      <p class="eyebrow">Académie Numérique Africaine</p>
+      <h1>Questionnaire de découverte</h1>
+      <p class="subtitle">Aidez-nous à concevoir un accompagnement utile, pratique et adapté à vos besoins.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="intro card">
+      <h2>Votre avis compte</h2>
+      <p>Ce questionnaire s’adresse aux étudiants, débutants et personnes qui souhaitent progresser ou se reconvertir dans l’informatique. Il prend environ 3 minutes.</p>
+      <p class="privacy-note">Les réponses seront utilisées pour étudier les besoins liés aux formations et au mentorat informatique proposés par ANA.</p>
+    </section>
+
+    <form id="survey-form" class="card">
+      <div class="anti-spam-field" aria-hidden="true">
+        <label for="website">Ne pas remplir</label>
+        <input id="website" name="website" type="text" tabindex="-1" autocomplete="off">
+      </div>
+      <div class="progress-wrap">
+        <div class="progress-label"><span id="progress-text">Partie 1 sur 4</span><span id="progress-percent">25 %</span></div>
+        <div class="progress-track"><div id="progress-bar"></div></div>
+      </div>
+
+      <fieldset class="form-section active" data-section="0">
+        <legend>1. Votre profil</legend>
+        <label class="field-label" for="profile">Quel est votre profil actuel ? <span>*</span></label>
+        <select id="profile" name="Profil actuel" required>
+          <option value="">Choisissez une réponse</option>
+          <option>Élève ou nouveau bachelier</option><option>Étudiant en informatique</option>
+          <option>Étudiant dans un autre domaine</option><option>Professionnel de l'informatique</option>
+          <option>Professionnel en reconversion</option><option>Autre</option>
+        </select>
+
+        <label class="field-label" for="level">Quel est votre niveau d'études ? <span>*</span></label>
+        <select id="level" name="Niveau d'études" required>
+          <option value="">Choisissez une réponse</option>
+          <option>Secondaire</option><option>Bac+1</option><option>Bac+2</option>
+          <option>Bac+3</option><option>Bac+4 ou plus</option><option>Autre</option>
+        </select>
+
+        <label class="field-label" for="skill-level">Quel est votre niveau actuel en informatique ? <span>*</span></label>
+        <select id="skill-level" name="Niveau en informatique" required>
+          <option value="">Choisissez une réponse</option><option>Débutant complet</option>
+          <option>Notions de base</option><option>Niveau intermédiaire</option><option>Niveau avancé</option>
+        </select>
+      </fieldset>
+
+      <fieldset class="form-section" data-section="1">
+        <legend>2. Vos difficultés et vos objectifs</legend>
+        <p class="field-label">Quelles sont vos principales difficultés ? <span>*</span><small>Plusieurs réponses possibles.</small></p>
+        <div class="options">
+          <label><input type="checkbox" name="Difficultés" value="Comprendre les cours"> Comprendre les cours</label>
+          <label><input type="checkbox" name="Difficultés" value="Pratiquer avec des projets réels"> Pratiquer avec des projets réels</label>
+          <label><input type="checkbox" name="Difficultés" value="Apprendre à programmer"> Apprendre à programmer</label>
+          <label><input type="checkbox" name="Difficultés" value="Comprendre les réseaux et systèmes"> Comprendre les réseaux et systèmes</label>
+          <label><input type="checkbox" name="Difficultés" value="Trouver des ressources de qualité"> Trouver des ressources de qualité</label>
+          <label><input type="checkbox" name="Difficultés" value="Préparer une certification"> Préparer une certification</label>
+          <label><input type="checkbox" name="Difficultés" value="Trouver un stage ou un emploi"> Trouver un stage ou un emploi</label>
+          <label><input type="checkbox" name="Difficultés" value="Rester motivé et organisé"> Rester motivé et organisé</label>
+        </div>
+
+        <p class="field-label">Dans quels domaines souhaitez-vous progresser ? <span>*</span><small>Plusieurs réponses possibles.</small></p>
+        <div class="options">
+          <label><input type="checkbox" name="Domaines souhaités" value="Programmation Python"> Programmation Python</label>
+          <label><input type="checkbox" name="Domaines souhaités" value="Développement web"> Développement web</label>
+          <label><input type="checkbox" name="Domaines souhaités" value="Réseaux informatiques"> Réseaux informatiques</label>
+          <label><input type="checkbox" name="Domaines souhaités" value="Systèmes Linux et administration"> Systèmes Linux et administration</label>
+          <label><input type="checkbox" name="Domaines souhaités" value="Cybersécurité"> Cybersécurité</label>
+          <label><input type="checkbox" name="Domaines souhaités" value="Intelligence artificielle"> Intelligence artificielle</label>
+          <label><input type="checkbox" name="Domaines souhaités" value="Bases de données"> Bases de données</label>
+          <label><input type="checkbox" name="Domaines souhaités" value="Autre"> Autre</label>
+        </div>
+
+        <label class="field-label" for="goal">Quel est votre principal objectif ? <span>*</span></label>
+        <select id="goal" name="Objectif principal" required>
+          <option value="">Choisissez une réponse</option><option>Réussir mes études</option>
+          <option>Développer des compétences pratiques</option><option>Réaliser des projets</option>
+          <option>Obtenir une certification</option><option>Trouver un stage ou un emploi</option>
+          <option>Me reconvertir dans l'informatique</option><option>Créer mon entreprise</option>
+        </select>
+      </fieldset>
+
+      <fieldset class="form-section" data-section="2">
+        <legend>3. Votre façon d'apprendre</legend>
+        <p class="field-label">Comment apprenez-vous actuellement l'informatique ? <small>Plusieurs réponses possibles.</small></p>
+        <div class="options">
+          <label><input type="checkbox" name="Méthodes actuelles" value="Cours à l'école ou à l'université"> Cours à l'école ou à l'université</label>
+          <label><input type="checkbox" name="Méthodes actuelles" value="Tutoriels YouTube"> Tutoriels YouTube</label>
+          <label><input type="checkbox" name="Méthodes actuelles" value="Formations en ligne"> Formations en ligne</label>
+          <label><input type="checkbox" name="Méthodes actuelles" value="Livres et documentation"> Livres et documentation</label>
+          <label><input type="checkbox" name="Méthodes actuelles" value="Groupes WhatsApp ou communautés"> Groupes WhatsApp ou communautés</label>
+          <label><input type="checkbox" name="Méthodes actuelles" value="Avec un mentor"> Avec un mentor</label>
+        </div>
+
+        <p class="field-label">Qu'est-ce qui vous aiderait le plus à progresser ? <small>Plusieurs réponses possibles.</small></p>
+        <div class="options">
+          <label><input type="checkbox" name="Aides souhaitées" value="Un mentor disponible"> Un mentor disponible pour répondre à mes questions</label>
+          <label><input type="checkbox" name="Aides souhaitées" value="Des exercices corrigés"> Des exercices corrigés</label>
+          <label><input type="checkbox" name="Aides souhaitées" value="Des projets pratiques guidés"> Des projets pratiques guidés</label>
+          <label><input type="checkbox" name="Aides souhaitées" value="Des séances de groupe"> Des séances de groupe</label>
+          <label><input type="checkbox" name="Aides souhaitées" value="Un parcours structuré"> Un parcours d'apprentissage structuré</label>
+          <label><input type="checkbox" name="Aides souhaitées" value="Aide pour trouver un stage ou emploi"> Un accompagnement pour trouver un stage ou un emploi</label>
+        </div>
+
+        <label class="field-label" for="format">Quel format préférez-vous ? <span>*</span></label>
+        <select id="format" name="Format préféré" required>
+          <option value="">Choisissez une réponse</option><option>En ligne</option>
+          <option>En présentiel</option><option>Hybride</option><option>Peu importe</option>
+        </select>
+
+        <label class="field-label" for="frequency">Quel rythme d'accompagnement vous conviendrait ?</label>
+        <select id="frequency" name="Rythme souhaité">
+          <option value="">Choisissez une réponse</option><option>Quelques séances par mois</option>
+          <option>1 séance par semaine</option><option>2 séances par semaine</option>
+          <option>Accompagnement régulier avec exercices et suivi</option>
+        </select>
+      </fieldset>
+
+      <fieldset class="form-section" data-section="3">
+        <legend>4. Votre intérêt pour ANA</legend>
+        <label class="field-label" for="interest">Seriez-vous intéressé(e) par un programme de mentorat informatique ? <span>*</span></label>
+        <select id="interest" name="Intérêt pour le mentorat" required>
+          <option value="">Choisissez une réponse</option><option>Très intéressé(e)</option>
+          <option>Plutôt intéressé(e)</option><option>Pas encore sûr(e)</option>
+          <option>Peu intéressé(e)</option><option>Pas intéressé(e)</option>
+        </select>
+
+        <label class="field-label" for="budget">Quel serait votre budget mensuel pour un mentorat informatique ? <span>*</span></label>
+        <select id="budget" name="Budget mensuel" required>
+          <option value="">Choisissez une réponse</option><option>Moins de 10 000 FCFA</option>
+          <option>10 000 à 24 999 FCFA</option><option>25 000 à 49 999 FCFA</option>
+          <option>50 000 à 100 000 FCFA</option><option>Plus de 100 000 FCFA</option>
+          <option>Je ne peux pas payer actuellement</option>
+        </select>
+
+        <label class="field-label" for="bootcamp">Seriez-vous intéressé(e) par un bootcamp intensif avec des projets pratiques ?</label>
+        <select id="bootcamp" name="Intérêt pour un bootcamp">
+          <option value="">Choisissez une réponse</option><option>Oui</option><option>Non</option><option>Peut-être</option>
+        </select>
+
+        <label class="field-label" for="challenge">Quelle difficulté aimeriez-vous résoudre grâce à un mentorat ?</label>
+        <textarea id="challenge" name="Difficulté à résoudre" rows="4" placeholder="Votre réponse (facultatif)"></textarea>
+
+        <label class="field-label" for="phone-required">Votre numéro WhatsApp <span>*</span><small>Indiquez l'indicatif de votre pays, par exemple +225. Ce numéro sera utilisé pour l'étude des besoins et ne sera pas publié.</small></label>
+        <input type="tel" name="whatsapp" pattern="[\d\+\s\-]{8,25}" minlength="8" maxlength="25" required placeholder="+225 07 58 66 27 35" title="Entrez un numéro de téléphone valide avec l'indicatif du pays.">
+
+        <label class="consent required-consent"><input type="checkbox" id="data-consent" name="Consentement collecte WhatsApp" value="J'accepte" required> J'accepte que mon numéro WhatsApp soit collecté par ANA pour cette enquête. Il sera conservé de manière confidentielle et ne sera pas partagé publiquement. <span>*</span></label>
+
+        <label class="field-label" for="contact">Souhaitez-vous être contacté(e) au lancement d'ANA ? <span>*</span></label>
+        <select id="contact" name="Souhaite être contacté" required>
+          <option value="">Choisissez une réponse</option><option>Oui</option><option>Non</option>
+        </select>
+
+        <div id="contact-fields" class="contact-fields hidden">
+          <label class="field-label" for="name">Votre nom (facultatif)</label>
+          <input id="name" name="Nom" autocomplete="name" placeholder="Nom ou prénom">
+          <label class="field-label" for="email">Votre adresse e-mail (facultatif)</label>
+          <input id="email" name="E-mail" type="email" autocomplete="email" placeholder="vous@exemple.com">
+          <label class="field-label" for="contact-phone">Autre numéro WhatsApp de contact (facultatif)</label>
+          <input id="contact-phone" name="Téléphone de contact supplémentaire" type="tel" placeholder="+225 ...">
+        </div>
+        <label class="consent"><input type="checkbox" id="consent" name="Consentement de contact" value="Oui"> J'accepte qu'ANA utilise mes coordonnées uniquement pour me recontacter au sujet de ses activités.</label>
+      </fieldset>
+
+      <div id="error-message" class="message error hidden" role="alert"></div>
+      <div id="success-message" class="message success hidden" role="status">
+        <h2>Merci pour votre participation !</h2>
+        <p>Votre réponse a été envoyée. Votre contribution aidera ANA à mieux comprendre les besoins en formation informatique.</p>
+      </div>
+
+      <div class="form-actions" id="form-actions">
+        <button type="button" class="button button-secondary" id="prev-btn" disabled>Précédent</button>
+        <button type="button" class="button button-primary" id="next-btn">Suivant</button>
+        <button type="submit" class="button button-primary hidden" id="submit-btn">Envoyer mes réponses</button>
+      </div>
+      <p class="required-note">Les questions marquées d'un * sont obligatoires.</p>
+    </form>
+    <footer>© <span id="year"></span> ANA — Académie Numérique Africaine</footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
