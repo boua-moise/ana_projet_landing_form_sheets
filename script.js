@@ -3,7 +3,7 @@
   Collez ici l'URL de votre application Web Apps Script après le déploiement.
   Exemple : https://script.google.com/macros/s/AKfy.../exec
 */
-const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwfhdWOsoYlyDcgebMZSeLmkSEMg-2VhjB6F78ne16SoI_eSdHfl9cRG5OfEUV6xDYq/exec";
+const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycby7HQAm79YPl45uGqL-_t8xgVIa-w4wjCLFJkOUtBT3GsDIzLd27SG_mDXbXzLlY1HS/exec";
 
 const form = document.getElementById("survey-form");
 const sections = [...document.querySelectorAll(".form-section")];
@@ -125,7 +125,7 @@ form.addEventListener("submit", async (event) => {
     actions.classList.add("hidden");
     document.querySelector(".progress-wrap").classList.add("hidden");
     successMessage.querySelector("p").textContent =
-      "Merci ! La demande d'envoi a été transmise. Comme le navigateur ne peut pas lire la confirmation de Google Apps Script, l'administrateur doit vérifier qu'une nouvelle ligne apparaît dans Google Sheets.";
+      "Merci ! La demande d'envoi a été transmise.";
     successMessage.classList.remove("hidden");
     successMessage.scrollIntoView({ behavior: "smooth", block: "center" });
   } catch (error) {
