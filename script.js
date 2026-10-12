@@ -5,7 +5,7 @@
  *
  * Remplace cette valeur par l'URL réelle de ton application Web Apps Script.
  */
-const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyDUE-wSsdqIUDO0IZDCfgxDeD7fBtQIg26v1721DB-wIvebRuDZTeYQtcwIGFeypctgQ/exec";
+const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzv-q41Xc4PyhOGIGCW955sey9u1oo3N-P1CvJH5qRRFSn3p_2SFa13hhHO4EUUbm4X0w/exec";
 
 const form = document.getElementById("survey-form");
 const sections = [...document.querySelectorAll(".form-section")];
